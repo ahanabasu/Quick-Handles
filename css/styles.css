@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    text-align: center;
+    margin: 0;
+    background-color: #e8e2e2b1;
+}
+.container::before {
+    box-shadow: none;
+    transition: all 0.5 ease;
+}
+.container {
+    width: 60%;
+    padding: 0em 2.5em;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 0.62em;
+    box-shadow: 0.1em 0.1em 0.4em rgba(0, 0, 0, 0.331);
+}
+
+.container:hover {
+    box-shadow: 0.4em 0.6em 1.5em rgba(0, 0, 0, 0.331);
+}
+
+h2 {
+    margin-top: 2%;
+    margin-bottom: 8%;
+    font-family: Consolas,monaco,monospace;
+    color: #766d6b;
+    font-weight: normal;
+}
+/* h3 {
+    font-family: 'Syne Mono', monospace;
+    font-size: 2.6rem;
+} */
+h1 {
+    margin-bottom: 4%;
+    margin-top: 10%;
+    font-family: Consolas,monaco,monospace;
+    font-size: 4.5rem;
+    color: #ffffff;
+    font-style: normal;
+    text-shadow: 2px 2px 10px #251d1d65;
+    display: inline-block;
+    transition: all 0.2s ease;
+
+}
+h1:hover {
+    color: #3e353543;
+    text-shadow: none;
+    cursor: default;
+}
+/* .top-container {
+    margin: 100px auto;
+    padding-bottom: 50px;
+} */
+.logo {
+    width: 2.8rem;
+}
+
+.img-link {
+    margin: 7px 22px;
+    text-decoration: none;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+.img-link:hover {
+    transform: translateY(-10px);
+}
+.links {
+    display: flex;
+    justify-content: center;    
+    flex-wrap: wrap;
+}
+.desc {
+    font-family: Consolas,monaco,monospace;
+    color: #000000;
+    font-size: 0.9em;
+}
+
+.copyright {
+    margin-top: 15%;
+    margin-bottom: 1%;
+    font-size: 13px;
+    font-family: Consolas,monaco,monospace;
+    color: #766d6b;
+    letter-spacing: -0.8px;
+}
+
+@media only screen and (max-width: 700px) {
+    h1 {
+        font-size: 3.5em;
+        padding-top: 1em;
+        padding-bottom: 0.5em;
+    }
+    .desc {
+        font-size: 0.7em;
+        padding-bottom: 1em;
+    }
+    .logo {
+        width: 2rem;
+    }
+    .img-link {
+        margin: 12px 18px;
+    }
+    .copyright {
+        margin-top: 25%;
+        font-size: 13px;
+        word-spacing: -1px;
+    }
+}
+
+
